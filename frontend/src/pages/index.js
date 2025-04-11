@@ -5,3 +5,5 @@ export { default as Upload } from './Upload';
 export { default as DocumentViewer } from './DocumentViewer';
 export { default as Login } from './Login';
 export { default as Register } from './Register';
+export { default as Profile } from './Profile';
+export { default as Settings } from './Settings';

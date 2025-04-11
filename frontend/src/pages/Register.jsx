@@ -46,18 +46,18 @@ const Register = () => {
     setLoading(true);
 
     try {
-      // For demo purposes, we'll just show a success message and redirect to login
-      // In a real app, we would register the user with an API call
-      setTimeout(() => {
-        setLoading(false);
-        navigate('/auth/login', { 
-          state: { 
-            message: 'Registration successful! Please sign in with your credentials.'
-          }
-        });
-      }, 1000);
+      // Register user with API
+      await signUp(fullName, email, password);
+      
+      // Redirect to login with success message
+      navigate('/auth/login', { 
+        state: { 
+          message: 'Registration successful! Please sign in with your credentials.'
+        }
+      });
     } catch (err) {
       setError(err.message);
+    } finally {
       setLoading(false);
     }
   };
