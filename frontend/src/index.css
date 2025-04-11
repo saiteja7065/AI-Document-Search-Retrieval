@@ -1,0 +1,48 @@
+/* Global CSS styles */
+
+:root {
+  /* Color variables based on theme */
+  --primary-main: #6610F2;
+  --primary-dark: #311B92;
+  --primary-light: #8540FA;
+  --secondary-main: #00D4FF;
+  --secondary-dark: #00A3C9;
+  --secondary-light: #4ECCA3;
+  --accent-main: #FF6B6B;
+  --accent-dark: #E05252;
+  --accent-light: #FF8A8A;
+  --background-default: #F8F9FA;
+  --background-paper: #FFFFFF;
+  --background-dark: #151E3F;
+  --text-primary: #212529;
+  --text-secondary: #6C757D;
+  --text-disabled: #ADB5BD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Outfit', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  background-color: var(--background-default);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+/* Utility classes */
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary-main), var(--secondary-main));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
